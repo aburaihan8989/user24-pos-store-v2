@@ -30,6 +30,7 @@ class OrderController extends Controller
     public function show($id)
     {
         $order = \App\Models\Order::with('kasir')->findOrFail($id);
+        $kasir = \App\Models\User::where('id', $order->kasir_id)->first();
 
         //get order items by order id
         $orderItems = \App\Models\OrderItem::with('product')->where('order_id', $id)->get();
