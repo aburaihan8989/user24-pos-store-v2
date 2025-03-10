@@ -104,14 +104,14 @@
                                 <label class="form-label">Category</label>
                                 <div class="selectgroup w-100">
                                     <label class="selectgroup-item">
-                                        <input type="radio" name="category" value="minuman" class="selectgroup-input"
-                                            @if ($product->category == 'minuman') checked @endif>
-                                        <span class="selectgroup-button">Minuman</span>
+                                        <input type="radio" name="category" value="produk1" class="selectgroup-input"
+                                            @if ($product->category == 'produk1') checked @endif>
+                                        <span class="selectgroup-button">Produk 1</span>
                                     </label>
                                     <label class="selectgroup-item">
-                                        <input type="radio" name="category" value="makanan" class="selectgroup-input"
-                                            @if ($product->category == 'makanan') checked @endif>
-                                        <span class="selectgroup-button">Makanan</span>
+                                        <input type="radio" name="category" value="produk2" class="selectgroup-input"
+                                            @if ($product->category == 'produk2') checked @endif>
+                                        <span class="selectgroup-button">Produk 2</span>
                                     </label>
                                     <label class="selectgroup-item">
                                         <input type="radio" name="category" value="other" class="selectgroup-input"
