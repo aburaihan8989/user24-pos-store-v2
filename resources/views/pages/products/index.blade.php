@@ -90,12 +90,12 @@
                                                 </td>
                                                 <td>
                                                     {{-- {{ $product->category }} --}}
-                                                    @if ($product->category == 'produk1')
-                                                        Produk 1
-                                                    @elseif ($product->category == 'produk2')
-                                                        Produk 2
-                                                    @elseif ($product->category == 'other')
-                                                        Other
+                                                    @if ($product->category == 'pakan')
+                                                        Pakan
+                                                    @elseif ($product->category == 'produk')
+                                                        Produk
+                                                    @elseif ($product->category == 'retail')
+                                                        Retail
                                                     @endif
                                                 </td>
                                                 <td>
@@ -135,7 +135,7 @@
                                                     <div class="d-flex">
                                                         @if ( auth()->user()->roles == "admin" )
                                                             <a href='{{ route('product.edit', $product->id) }}'
-                                                                class="btn btn-sm btn-info btn-icon">
+                                                                class="btn btn-sm btn-primary btn-icon">
                                                                 <i class="fas fa-edit"></i>
                                                                 Edit
                                                             </a>
@@ -153,7 +153,7 @@
                                                             <input type="hidden" name="_method" value="DELETE" />
                                                             <input type="hidden" name="_token"
                                                                 value="{{ csrf_token() }}" />
-                                                                <button class="btn btn-sm btn-info btn-icon confirm-delete ml-2">
+                                                                <button class="btn btn-sm btn-danger btn-icon confirm-delete ml-2">
                                                                 <i class="fas fa-times"></i> Delete
                                                             </button>
                                                         </form>

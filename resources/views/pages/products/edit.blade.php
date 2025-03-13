@@ -104,19 +104,19 @@
                                 <label class="form-label">Category</label>
                                 <div class="selectgroup w-100">
                                     <label class="selectgroup-item">
-                                        <input type="radio" name="category" value="produk1" class="selectgroup-input"
-                                            @if ($product->category == 'produk1') checked @endif>
-                                        <span class="selectgroup-button">Produk 1</span>
+                                        <input type="radio" name="category" value="pakan" class="selectgroup-input"
+                                            @if ($product->category == 'pakan') checked @endif>
+                                        <span class="selectgroup-button">Pakan</span>
                                     </label>
                                     <label class="selectgroup-item">
-                                        <input type="radio" name="category" value="produk2" class="selectgroup-input"
-                                            @if ($product->category == 'produk2') checked @endif>
-                                        <span class="selectgroup-button">Produk 2</span>
+                                        <input type="radio" name="category" value="produk" class="selectgroup-input"
+                                            @if ($product->category == 'produk') checked @endif>
+                                        <span class="selectgroup-button">Produk</span>
                                     </label>
                                     <label class="selectgroup-item">
-                                        <input type="radio" name="category" value="other" class="selectgroup-input"
-                                            @if ($product->category == 'other') checked @endif>
-                                        <span class="selectgroup-button">Other</span>
+                                        <input type="radio" name="category" value="retail" class="selectgroup-input"
+                                            @if ($product->category == 'retail') checked @endif>
+                                        <span class="selectgroup-button">Retail</span>
                                     </label>
                                 </div>
                             </div>
